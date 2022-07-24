@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            app:titleTextColor="@color/colorPrimaryDark"
+            android:id="@+id/agenda_harian_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:elevation="4dp"
+            android:theme="@style/ActionBarCustom"
+            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="55dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:strokeColor="@color/colorStroke"
+                        app:strokeWidth="0.9dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="10dp">
+
+                            <TextView
+                                android:id="@+id/agenda_textView_hidupkan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pengingat Aktif"
+                                android:textColor="@color/white"
+                                android:textSize="11dp" />
+
+                            <com.google.android.material.switchmaterial.SwitchMaterial
+                                android:id="@+id/agenda_switch_hidupkan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="true" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:hint="Nama Agenda">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tambah_nama_agenda_harian"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:hint="Jam Kegiatan">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tambah_jam_agenda_harian"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:editable="false"
+                            android:focusable="false" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        app:strokeColor="@color/colorStroke"
+                        app:strokeWidth="0.9dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="start"
+                                android:gravity="center"
+                                android:text="Setel Ulangi" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/agenda_repeat_kurang"
+                                    style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="center"
+                                    app:backgroundTint="@color/colorPrimary"
+                                    app:icon="@drawable/ic_remove_white_24dp"
+                                    app:iconTint="@color/white" />
+
+                                <EditText
+                                    android:id="@+id/agenda_input_repeat"
+                                    android:layout_width="60dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:editable="false"
+                                    android:hint="0"
+                                    android:textAlignment="center" />
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/agenda_repeat_tambah"
+                                    style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="center"
+                                    app:backgroundTint="@color/colorPrimary"
+                                    app:icon="@drawable/ic_add_24dp"
+                                    app:iconTint="@color/white" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text=" *Menit"
+                                    android:textSize="10dp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        app:strokeColor="@color/colorStroke"
+                        app:strokeWidth="0.9dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="15dp"
+                                android:layout_marginVertical="10dp"
+                                android:text="Pilih hari :" />
+
+                            <TextView
+                                android:id="@+id/validasi_hari"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="Silahkan pilih salah satu hari"
+                                android:textAlignment="center"
+                                android:textColor="@color/red"
+                                android:visibility="gone" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/hari_senin"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:text="Senin" />
+
+                                    <CheckBox
+                                        android:id="@+id/hari_selasa"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:text="Selasa" />
+
+                                    <CheckBox
+                                        android:id="@+id/hari_rabu"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:text="Rabu" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/hari_kamis"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:text="Kamis" />
+
+                                    <CheckBox
+                                        android:id="@+id/hari_jumat"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:text="Jumat" />
+
+                                    <CheckBox
+                                        android:id="@+id/hari_sabtu"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:text="Sabtu" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/hari_minggu"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:text="Minggu" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveAgenda"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        app:icon="@drawable/ic_save_black_32dp"
+        app:iconTint="@color/colorPrimaryDark"
+        tools:ignore="RtlHardcoded" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

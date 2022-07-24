@@ -1,0 +1,7 @@
+#Sat Mar 21 22:52:11 ICT 2020
+base.0=D\:\\androidProject\\UsageAdvisor\\app\\build\\intermediates\\dex\\release\\out\\classes.dex
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=D\:\\androidProject\\UsageAdvisor\\app\\build\\intermediates\\dex\\release\\out\\classes2.dex

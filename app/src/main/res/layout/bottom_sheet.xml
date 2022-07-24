@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bottom_sheet_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical"
+                android:paddingHorizontal="25dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginBottom="18dp"
+                    android:background="@drawable/circle_shape"
+                    android:elevation="0.1dp"
+                    android:padding="12dp"
+                    android:src="@drawable/hero_app_logo" />
+
+                <TextView
+                    android:id="@+id/username_bottom_sheet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:maxLines="2"
+                    android:text="Septian Djamari Chaniaco"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="25dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/drawer_pelajari_aplikasi"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/bottom_sheet_background"
+                    android:text="Pelajari tentang aplikasi"
+                    android:textAllCaps="false"
+                    android:textColor="@color/abu2hitam"
+                    app:icon="@drawable/ic_pelajari_aplikasi"
+                    app:iconTint="@color/colorAccent" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/drawer_tentang"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/bottom_sheet_background"
+                    android:text="Info"
+                    android:textAllCaps="false"
+                    android:textColor="@color/abu2hitam"
+                    app:icon="@drawable/ic_info_black_24dp"
+                    app:iconTint="@color/colorAccent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Pengaturan akun" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/abu2hitam" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/drawer_edit_profile"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/bottom_sheet_background"
+                    android:text="Edit Profil"
+                    android:textAllCaps="false"
+                    android:textColor="@color/abu2hitam"
+                    app:icon="@drawable/ic_person_black_24dp"
+                    app:iconTint="@color/colorAccent" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/drawer_sign_out"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/bottom_sheet_background"
+                    android:text="Signout"
+                    android:textAllCaps="false"
+                    android:textColor="@color/abu2hitam"
+                    app:icon="@drawable/ic_logout"
+                    app:iconTint="@color/colorAccent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:layout_gravity="top|right"
+        android:id="@+id/button_bottom_sheet_close"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:icon="@drawable/ic_close_black_24dp"
+        app:iconTint="@color/white" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

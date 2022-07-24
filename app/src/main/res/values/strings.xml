@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">UsageAdvisor</string>
+    <!-- Layout Signin -->
+    <string name="title_signin">Sign In</string>
+    <string name="signin_email">Email</string>
+    <string name="signin_password">Password</string>
+    <string name="proses_signin">Sign In</string>
+    <string name="pindah_buat_akun">Buat Akun</string>
+    <string name="lupa_password">Lupa Password ?</string>
+    <string name="tanya_akun_signin">Anda Belum Punya Akun ?</string>
+    <string name="pelajari">Pelajari Tentang Aplikasi</string>
+    <!-- Layout Signup -->
+    <string name="title_signup">Daftar Akun</string>
+    <string name="daftar_username">Username</string>
+    <string name="daftar_email">Email</string>
+    <string name="daftar_password">Password</string>
+    <string name="daftar_password_ulangi">Ulangi Password</string>
+    <string name="daftar_proses_lanjut">Lanjutkan</string>
+    <string name="pindah_signin">Sign In</string>
+    <string name="tanya_akun_signup">Anda Sudah Punya Akun ?</string>
+
+    <string name="hint_verivikasi_member">ID Kelompok</string>
+    <string name="button_proses_verifikasi_member">Proses Kode</string>
+    <string name="button_batal_verifikasi_member">Batalkan Proses</string>
+    <string name="keterangan_kode_verifikasi_member">Silahkan meminta kode Member langsung kepada pengguna admin</string>
+
+    <string name="title_home">Beranda</string>
+    <string name="title_personal_usage">Pemakaian Pribadi</string>
+    <string name="title_group_usage">Pemakaian Grup</string>
+    <string name="title_lock_phone">Kunci Layar</string>
+
+    <!--    HOMEPAGE   -->
+
+    <!--    Penggunaan layar   -->
+
+    <!--    Penggunaan Aplikasi    -->
+
+    <!--    Agenda Harian atau jadwal Harian    -->
+
+
+    <string name="settings">Settings</string>
+    <string name="title_pengingat">Pengingat Agenda</string>
+    <string name="koleksi_waktu">Koleksi Waktu</string>
+
+<!--    Dialog modal title-->
+    <string name="dialogTimeStart">Kunci Selama :</string>
+    <string name="dialogTimeFinish">Kunci, ketika penggunaan mencapai :</string>
+    <string name="dialogScheduleStart">Kunci pada jam :</string>
+    <string name="dialogScheduleFinish">Buka kunci layar pada jam :</string>
+
+</resources>

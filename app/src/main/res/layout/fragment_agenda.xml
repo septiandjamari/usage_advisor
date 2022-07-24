@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="?attr/actionBarSize"
+    android:orientation="vertical">
+
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/empty_data_agenda"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:gravity="center"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:visibility="gone">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Agenda masih kosong,\nSilahkan tekan tombol dibawah\nuntuk menambahkan agenda."-->
+    <!--            android:textAlignment="center" />-->
+
+    <!--    </LinearLayout>-->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|left">
+
+        <LinearLayout
+            android:id="@+id/exists_data_agenda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewHeroAgenda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/agenda_hero" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daftar Agenda :"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Geser ke samping untuk menghapus"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_daftar_agenda_harian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginBottom="?attr/actionBarSize" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

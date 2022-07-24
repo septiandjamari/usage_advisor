@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recyclerview_member_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="5dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/card_member_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:text="User12"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/card_member_idUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_schedule_black_24dp"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/card_member_terakhir_dilihat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:text="Terakhir dilihat : 24-05-2020 16:08:09"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_hourglass_full_24"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/card_member_durasi_layar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:text="Durasi layar hidup : 2 jam 1 menit"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_lock_open_24"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/card_member_kunci_layar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:text="Kunci layar dibuka : 100 kali"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_touch_app_24"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/card_member_interaksi_layar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:text="Interaksi Aplikasi : 143 kali"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

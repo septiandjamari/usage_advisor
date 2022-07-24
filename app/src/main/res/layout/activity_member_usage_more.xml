@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.MaterialToolbar
+        app:titleTextColor="@color/colorPrimaryDark"
+        android:id="@+id/member_usage_more_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:theme="@style/ActionBarCustom"
+        app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+        <TextView
+            android:id="@+id/member_usage_more_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Koleksi Aplikasi / Daftar Aplikasi :"
+            android:layout_marginVertical="15dp"/>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/user_more_list_notExists"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar Kosong!"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/member_usage_more_recycler_appColection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/member_usage_more_recycler_appList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>

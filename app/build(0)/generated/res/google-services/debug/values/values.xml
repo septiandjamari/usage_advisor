@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">466523838126-eiquoahu0t5bcojn11m7d3u9l0kt284e.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://usageadvisor.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">466523838126</string>
+    <string name="google_api_key" translatable="false">AIzaSyCQMOt7GC1DvFIUynCcj8CGIwtgQZ2g2Fc</string>
+    <string name="google_app_id" translatable="false">1:466523838126:android:18bbe4335ffc9bc4617f3f</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCQMOt7GC1DvFIUynCcj8CGIwtgQZ2g2Fc</string>
+    <string name="google_storage_bucket" translatable="false">usageadvisor.appspot.com</string>
+    <string name="project_id" translatable="false">usageadvisor</string>
+</resources>

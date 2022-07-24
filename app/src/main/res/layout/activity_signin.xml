@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".SignInActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:src="@drawable/hero_app_logo" />
+
+            <LinearLayout
+                android:id="@+id/layout_sigin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!--                <com.google.android.material.card.MaterialCardView-->
+                <!--                    android:id="@+id/card_keterangan"-->
+                <!--                    style="@style/CardView.Light"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_margin="10dp"-->
+                <!--                    app:rippleColor="@color/colorPrimary"-->
+                <!--                    app:strokeColor="@color/colorPrimary"-->
+                <!--                    app:strokeWidth="0.5dp">-->
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:padding="10dp"-->
+                <!--                        android:text="@string/selamat_datang"-->
+                <!--                        android:textColor="@color/design_default_color_primary" />-->
+
+                <!--                </com.google.android.material.card.MaterialCardView>-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:text="@string/title_signin"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:hint="@string/signin_email">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/signin_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textEmailAddress" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:hint="@string/signin_password"
+                        app:passwordToggleDrawable="@drawable/visibility"
+                        app:passwordToggleEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/signin_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/button_signin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="@string/proses_signin" />
+
+                    <Button
+                        android:id="@+id/lupa_password"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:text="@string/lupa_password"
+                        android:textAllCaps="false" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tanya_akun_signin" />
+
+                        <Button
+                            android:id="@+id/pindah_buatakun"
+                            style="@style/Widget.MaterialComponents.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pindah_buat_akun"
+                            android:textAllCaps="false" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/pelajari_aplikasi"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:text="@string/pelajari" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        android:alpha="0.9"
+        android:gravity="center">
+
+        <com.google.android.material.card.MaterialCardView
+            app:cardBackgroundColor="@color/abu2hitam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:textColor="@color/white"
+                    android:text="Mohon tunggu sebentar" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

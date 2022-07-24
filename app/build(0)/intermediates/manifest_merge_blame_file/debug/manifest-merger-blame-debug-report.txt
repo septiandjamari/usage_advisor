@@ -1,0 +1,344 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.djamari.usageadvisor"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:6:5-67
+11-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:7:5-79
+12-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:7:22-76
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:8:5-76
+13-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:8:22-73
+14    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+14-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:9:5-11:47
+14-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:10:9-62
+15    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+15-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:12:5-81
+15-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:12:22-78
+16    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+16-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:13:5-77
+16-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:13:22-74
+17    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+17-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:14:5-85
+17-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:14:22-82
+18    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+18-->[com.google.android.gms:play-services-measurement-api:17.4.3] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\6fe4b55c8a1611151343fc147cb0de95\jetified-play-services-measurement-api-17.4.3\AndroidManifest.xml:24:5-68
+18-->[com.google.android.gms:play-services-measurement-api:17.4.3] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\6fe4b55c8a1611151343fc147cb0de95\jetified-play-services-measurement-api-17.4.3\AndroidManifest.xml:24:22-65
+19    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+19-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\8183980bc8e77d4fe843a9e6d0f0d6a0\jetified-firebase-iid-20.1.5\AndroidManifest.xml:26:5-82
+19-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\8183980bc8e77d4fe843a9e6d0f0d6a0\jetified-firebase-iid-20.1.5\AndroidManifest.xml:26:22-79
+20    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+20-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\ecc2a30565dd7c57cd203d50d510b45e\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:26:5-110
+20-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\ecc2a30565dd7c57cd203d50d510b45e\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:26:22-107
+21
+22    <application
+22-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:17:5-95:19
+23        android:name="com.djamari.usageadvisor.app.AppStarter"
+23-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:18:9-39
+24        android:allowBackup="true"
+24-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:19:9-35
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.1.0] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\bcfc0b80df78591183083cc148e1cf2c\core-1.1.0\AndroidManifest.xml:24:18-86
+26        android:debuggable="true"
+27        android:icon="@mipmap/ic_launcher"
+27-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:20:9-43
+28        android:label="@string/app_name"
+28-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:21:9-41
+29        android:roundIcon="@mipmap/ic_launcher_round"
+29-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:22:9-54
+30        android:supportsRtl="true"
+30-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:23:9-35
+31        android:testOnly="true"
+32        android:theme="@style/AppTheme" >
+32-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:24:9-40
+33        <activity
+33-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:25:9-36:20
+34            android:name="com.djamari.usageadvisor.MainActivity"
+34-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:26:13-41
+35            android:screenOrientation="portrait"
+35-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:27:13-49
+36            android:theme="@style/AppTheme.NoActionBar"
+36-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:28:13-56
+37            android:windowSoftInputMode="adjustResize" >
+37-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:29:13-55
+38            <intent-filter>
+38-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:31:13-35:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:32:17-69
+39-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:32:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:34:17-77
+41-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:34:27-74
+42            </intent-filter>
+43        </activity>
+44        <activity
+44-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:37:9-42:56
+45            android:name="com.djamari.usageadvisor.SignUpActivity"
+45-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:38:13-43
+46            android:screenOrientation="portrait"
+46-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:39:13-49
+47            android:theme="@style/AppTheme1"
+47-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:40:13-45
+48            android:windowSoftInputMode="adjustResize" />
+48-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:41:13-55
+49        <activity
+49-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:43:9-48:56
+50            android:name="com.djamari.usageadvisor.otherActivity.Agenda.AddEditDailyAgendaActivity"
+50-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:44:13-76
+51            android:screenOrientation="portrait"
+51-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:45:13-49
+52            android:theme="@style/AppTheme.NoActionBar"
+52-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:46:13-56
+53            android:windowSoftInputMode="adjustResize" />
+53-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:47:13-55
+54        <activity
+54-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:49:9-54:56
+55            android:name="com.djamari.usageadvisor.SignInActivity"
+55-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:50:13-43
+56            android:screenOrientation="portrait"
+56-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:51:13-49
+57            android:theme="@style/AppTheme1"
+57-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:52:13-45
+58            android:windowSoftInputMode="adjustResize" />
+58-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:53:13-55
+59        <activity
+59-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:55:9-60:56
+60            android:name="com.djamari.usageadvisor.otherActivity.Setting.SettingActivity"
+60-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:56:13-66
+61            android:screenOrientation="portrait"
+61-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:57:13-49
+62            android:theme="@style/AppTheme.NoActionBar"
+62-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:58:13-56
+63            android:windowSoftInputMode="adjustResize" />
+63-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:59:13-55
+64
+65        <receiver
+65-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:63:9-83:20
+66            android:name="com.djamari.usageadvisor.broadcastReceiver.BootCompletedService"
+66-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:64:13-67
+67            android:exported="true" >
+67-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:65:13-36
+68            <intent-filter>
+68-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:66:13-76:29
+69                <action android:name="android.intent.action.BOOT_COMPLETED" />
+69-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:67:17-79
+69-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:67:25-76
+70                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+70-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:68:17-82
+70-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:68:25-79
+71                <action android:name="android.intent.action.REBOOT" />
+71-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:69:17-71
+71-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:69:25-68
+72                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+72-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:70:17-80
+72-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:70:25-77
+73                <action android:name="android.intent.action.USER_UNLOCKED" />
+73-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:71:17-78
+73-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:71:25-75
+74                <action android:name="android.intent.action.USER_PRESENT" />
+74-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:72:17-77
+74-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:72:25-74
+75                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+75-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:73:17-79
+75-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:73:25-76
+76
+77                <category android:name="android.intent.category.DEFAULT" />
+77-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:75:17-76
+77-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:75:27-73
+78            </intent-filter>
+79            <intent-filter>
+79-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:77:13-82:29
+80                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+80-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:78:17-81
+80-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:78:25-78
+81
+82                <data
+82-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:79:17-81:48
+83                    android:path="com.djamari.usageadvisor"
+83-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:80:21-60
+84                    android:scheme="package" />
+84-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:81:21-45
+85            </intent-filter>
+86        </receiver>
+87        <receiver
+87-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:84:9-93:20
+88            android:name="com.djamari.usageadvisor.service.AdminReceiver"
+88-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:85:13-50
+89            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+89-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:86:13-70
+90            <meta-data
+90-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:87:13-89:64
+91                android:name="android.app.device_admin"
+91-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:88:17-56
+92                android:resource="@xml/lock_screen_policies" />
+92-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:89:17-61
+93
+94            <intent-filter>
+94-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:90:13-92:29
+95                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+95-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:91:17-82
+95-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:91:25-79
+96            </intent-filter>
+97        </receiver>
+98
+99        <service android:name="com.djamari.usageadvisor.service.ForegroundService" />
+99-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:94:9-62
+99-->D:\androidProject\UsageAdvisor\app\src\main\AndroidManifest.xml:94:18-59
+100
+101        <activity
+101-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\a965e02da0dc74b3cb82526fa169fefe\jetified-firebase-auth-19.3.1\AndroidManifest.xml:24:9-31:50
+102            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+102-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\a965e02da0dc74b3cb82526fa169fefe\jetified-firebase-auth-19.3.1\AndroidManifest.xml:25:13-85
+103            android:excludeFromRecents="true"
+103-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\a965e02da0dc74b3cb82526fa169fefe\jetified-firebase-auth-19.3.1\AndroidManifest.xml:26:13-46
+104            android:exported="true"
+104-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\a965e02da0dc74b3cb82526fa169fefe\jetified-firebase-auth-19.3.1\AndroidManifest.xml:27:13-36
+105            android:launchMode="singleTask"
+105-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\a965e02da0dc74b3cb82526fa169fefe\jetified-firebase-auth-19.3.1\AndroidManifest.xml:28:13-44
+106            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+106-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\a965e02da0dc74b3cb82526fa169fefe\jetified-firebase-auth-19.3.1\AndroidManifest.xml:29:13-102
+107            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+107-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\a965e02da0dc74b3cb82526fa169fefe\jetified-firebase-auth-19.3.1\AndroidManifest.xml:30:13-72
+108
+109        <service
+109-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\a965e02da0dc74b3cb82526fa169fefe\jetified-firebase-auth-19.3.1\AndroidManifest.xml:33:9-39:19
+110            android:name="com.google.firebase.components.ComponentDiscoveryService"
+110-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\a965e02da0dc74b3cb82526fa169fefe\jetified-firebase-auth-19.3.1\AndroidManifest.xml:34:13-84
+111            android:directBootAware="true"
+111-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+112            android:exported="false" >
+112-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\a965e02da0dc74b3cb82526fa169fefe\jetified-firebase-auth-19.3.1\AndroidManifest.xml:35:13-37
+113            <meta-data
+113-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\a965e02da0dc74b3cb82526fa169fefe\jetified-firebase-auth-19.3.1\AndroidManifest.xml:36:13-38:85
+114                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+114-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\a965e02da0dc74b3cb82526fa169fefe\jetified-firebase-auth-19.3.1\AndroidManifest.xml:37:17-109
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\a965e02da0dc74b3cb82526fa169fefe\jetified-firebase-auth-19.3.1\AndroidManifest.xml:38:17-82
+116            <meta-data
+116-->[com.google.firebase:firebase-database:19.3.0] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\a858482f0d85511048b88d680e761880\jetified-firebase-database-19.3.0\AndroidManifest.xml:32:13-34:85
+117                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+117-->[com.google.firebase:firebase-database:19.3.0] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\a858482f0d85511048b88d680e761880\jetified-firebase-database-19.3.0\AndroidManifest.xml:33:17-109
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.firebase:firebase-database:19.3.0] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\a858482f0d85511048b88d680e761880\jetified-firebase-database-19.3.0\AndroidManifest.xml:34:17-82
+119            <meta-data
+119-->[com.google.firebase:firebase-firestore:21.4.3] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\1dc1d8b46e8da592d1f149b8329b2922\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:20:13-22:85
+120                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+120-->[com.google.firebase:firebase-firestore:21.4.3] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\1dc1d8b46e8da592d1f149b8329b2922\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:21:17-111
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[com.google.firebase:firebase-firestore:21.4.3] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\1dc1d8b46e8da592d1f149b8329b2922\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:22:17-82
+122            <meta-data
+122-->[com.google.android.gms:play-services-measurement-api:17.4.3] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\6fe4b55c8a1611151343fc147cb0de95\jetified-play-services-measurement-api-17.4.3\AndroidManifest.xml:30:13-32:85
+123                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+123-->[com.google.android.gms:play-services-measurement-api:17.4.3] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\6fe4b55c8a1611151343fc147cb0de95\jetified-play-services-measurement-api-17.4.3\AndroidManifest.xml:31:17-139
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[com.google.android.gms:play-services-measurement-api:17.4.3] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\6fe4b55c8a1611151343fc147cb0de95\jetified-play-services-measurement-api-17.4.3\AndroidManifest.xml:32:17-82
+125            <meta-data
+125-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\8183980bc8e77d4fe843a9e6d0f0d6a0\jetified-firebase-iid-20.1.5\AndroidManifest.xml:32:13-34:85
+126                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+126-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\8183980bc8e77d4fe843a9e6d0f0d6a0\jetified-firebase-iid-20.1.5\AndroidManifest.xml:33:17-96
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\8183980bc8e77d4fe843a9e6d0f0d6a0\jetified-firebase-iid-20.1.5\AndroidManifest.xml:34:17-82
+128            <meta-data
+128-->[com.google.firebase:firebase-installations:16.2.1] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\80b5e92b70a89d4f419c7604b16b139f\jetified-firebase-installations-16.2.1\AndroidManifest.xml:17:13-19:85
+129                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+129-->[com.google.firebase:firebase-installations:16.2.1] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\80b5e92b70a89d4f419c7604b16b139f\jetified-firebase-installations-16.2.1\AndroidManifest.xml:18:17-127
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[com.google.firebase:firebase-installations:16.2.1] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\80b5e92b70a89d4f419c7604b16b139f\jetified-firebase-installations-16.2.1\AndroidManifest.xml:19:17-82
+131        </service>
+132
+133        <receiver
+133-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\8183980bc8e77d4fe843a9e6d0f0d6a0\jetified-firebase-iid-20.1.5\AndroidManifest.xml:37:9-44:20
+134            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+134-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\8183980bc8e77d4fe843a9e6d0f0d6a0\jetified-firebase-iid-20.1.5\AndroidManifest.xml:38:13-78
+135            android:exported="true"
+135-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\8183980bc8e77d4fe843a9e6d0f0d6a0\jetified-firebase-iid-20.1.5\AndroidManifest.xml:39:13-36
+136            android:permission="com.google.android.c2dm.permission.SEND" >
+136-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\8183980bc8e77d4fe843a9e6d0f0d6a0\jetified-firebase-iid-20.1.5\AndroidManifest.xml:40:13-73
+137            <intent-filter>
+137-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\8183980bc8e77d4fe843a9e6d0f0d6a0\jetified-firebase-iid-20.1.5\AndroidManifest.xml:41:13-43:29
+138                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+138-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\8183980bc8e77d4fe843a9e6d0f0d6a0\jetified-firebase-iid-20.1.5\AndroidManifest.xml:42:17-81
+138-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\8183980bc8e77d4fe843a9e6d0f0d6a0\jetified-firebase-iid-20.1.5\AndroidManifest.xml:42:25-78
+139            </intent-filter>
+140        </receiver>
+141
+142        <activity
+142-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\75e7c473eccef2b3a0eec97fa3a7825b\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+143            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+143-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\75e7c473eccef2b3a0eec97fa3a7825b\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+144            android:exported="false"
+144-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\75e7c473eccef2b3a0eec97fa3a7825b\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+145            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+145-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\75e7c473eccef2b3a0eec97fa3a7825b\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+146
+147        <provider
+147-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+148            android:name="com.google.firebase.provider.FirebaseInitProvider"
+148-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+149            android:authorities="com.djamari.usageadvisor.firebaseinitprovider"
+149-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+150            android:exported="false"
+150-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+151            android:initOrder="100" />
+151-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+152
+153        <receiver
+153-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\ecc2a30565dd7c57cd203d50d510b45e\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:29:9-33:20
+154            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+154-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\ecc2a30565dd7c57cd203d50d510b45e\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:30:13-85
+155            android:enabled="true"
+155-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\ecc2a30565dd7c57cd203d50d510b45e\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:31:13-35
+156            android:exported="false" >
+156-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\ecc2a30565dd7c57cd203d50d510b45e\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:32:13-37
+157        </receiver>
+158
+159        <service
+159-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\ecc2a30565dd7c57cd203d50d510b45e\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:35:9-38:40
+160            android:name="com.google.android.gms.measurement.AppMeasurementService"
+160-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\ecc2a30565dd7c57cd203d50d510b45e\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:36:13-84
+161            android:enabled="true"
+161-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\ecc2a30565dd7c57cd203d50d510b45e\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:37:13-35
+162            android:exported="false" />
+162-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\ecc2a30565dd7c57cd203d50d510b45e\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:38:13-37
+163        <service
+163-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\ecc2a30565dd7c57cd203d50d510b45e\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:39:9-43:72
+164            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+164-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\ecc2a30565dd7c57cd203d50d510b45e\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:40:13-87
+165            android:enabled="true"
+165-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\ecc2a30565dd7c57cd203d50d510b45e\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:41:13-35
+166            android:exported="false"
+166-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\ecc2a30565dd7c57cd203d50d510b45e\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:42:13-37
+167            android:permission="android.permission.BIND_JOB_SERVICE" />
+167-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\ecc2a30565dd7c57cd203d50d510b45e\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:43:13-69
+168
+169        <meta-data
+169-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\164bb505b81f338baa0db13edd04c1d1\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+170            android:name="com.google.android.gms.version"
+170-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\164bb505b81f338baa0db13edd04c1d1\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+171            android:value="@integer/google_play_services_version" />
+171-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\164bb505b81f338baa0db13edd04c1d1\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+172
+173        <provider
+173-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\f8e2b213c9c6535c422622afbf842b10\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+174            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+174-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\f8e2b213c9c6535c422622afbf842b10\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+175            android:authorities="com.djamari.usageadvisor.lifecycle-process"
+175-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\f8e2b213c9c6535c422622afbf842b10\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+176            android:exported="false"
+176-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\f8e2b213c9c6535c422622afbf842b10\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+177            android:multiprocess="true" />
+177-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Djamari\.gradle\caches\transforms-2\files-2.1\f8e2b213c9c6535c422622afbf842b10\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+178    </application>
+179
+180</manifest>

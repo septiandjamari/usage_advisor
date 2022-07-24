@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masukkan ID Kelompok \nyang telah terdaftar:"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/hint_verivikasi_member">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_verifikasi_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_proses_verifikasi_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/button_proses_verifikasi_member" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_batal_verifikasi_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="40dp"
+            android:text="KEMBALI" />
+    </LinearLayout>
+
+
+</LinearLayout>

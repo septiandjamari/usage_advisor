@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilih peran penggunaan anda : "
+            android:textAlignment="center"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/role_pribadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="PRIBADI" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:id="@+id/role_kelompok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="KELOMPOK" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/kembali_fragment_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="40dp"
+            android:text="KEMBALI" />
+    </LinearLayout>
+</LinearLayout>

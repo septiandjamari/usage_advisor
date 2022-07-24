@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/mainActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_bottom_sheet"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:backgroundTint="@color/white"
+                    android:gravity="start"
+                    app:icon="@drawable/ic_menu_black_24dp"
+                    app:iconTint="@color/colorPrimary" />
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/main_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginLeft="?attr/actionBarSize"
+                    android:background="@color/white"
+                    android:theme="@style/ActionBarCustom"
+                    app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"
+                    app:titleTextColor="@color/colorPrimaryDark" />
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.fragment.app.FragmentContainerView
+
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/mobile_navigation" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/activity_snackbar_coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:orientation="vertical">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_add_agenda"
+            style="@style/Widget.MaterialComponents.FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="14dp"
+            android:visibility="visible"
+            app:backgroundTint="@color/colorAccent"
+            app:srcCompat="@drawable/ic_add_24dp"
+            app:tint="@color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tombol_detail_kembali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginHorizontal="25dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="Kembali"
+            android:visibility="visible"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.3"
+            android:background="@color/abu2hitam" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            style="@style/Widget.Design.BottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:elevation="4dp"
+            android:theme="@style/Widget.BottomNavigationViewCustom"
+            app:itemIconTint="@color/bottom_visibility"
+            app:itemTextColor="@color/bottom_visibility"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

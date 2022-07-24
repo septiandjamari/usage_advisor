@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingHorizontal="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Kunci Layar Untuk Grup:"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    app:strokeColor="@color/colorPrimaryDark"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="48dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0"
+                                app:cardCornerRadius="10dp">
+
+                                <com.google.android.material.switchmaterial.SwitchMaterial
+                                    android:id="@+id/switchTimeBasedGrup"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/colorPrimaryDark"
+                                    android:padding="10dp" />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="25dp"
+                                android:layout_weight="1.0"
+                                android:text="Berdasarkan Waktu Penggunaan"
+                                android:textStyle="bold"
+                                tools:ignore="NestedWeights" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="25dp"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingHorizontal="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="\u2022 Kunci Selama :" />
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/basedTimeFinishGrup"
+                                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingHorizontal="5dp"
+                                    android:text="1 jam 24 menit" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:paddingHorizontal="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1.0"
+                                    android:maxLines="2"
+                                    android:text="\u2022 Ketika Penggunaan Layar Mencapai:" />
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/basedTimeStartGrup"
+                                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0"
+                                    android:paddingHorizontal="5dp"
+                                    android:text="1 jam 24 menit" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical"
+                                android:paddingHorizontal="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="\u2022 Ulangi Penguncian (24 Jam) :" />
+
+                                <RadioGroup
+                                    android:id="@+id/radiobasedSceduleLockPhoneGrup"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/radiobaseSchedule1Grup"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0"
+                                        android:text="Satu Kali" />
+
+                                    <RadioButton
+                                        android:id="@+id/radiobaseSchedule2Grup"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0"
+                                        android:text="Terus-menerus" />
+
+                                </RadioGroup>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.9dp"
+                            android:background="@color/colorStroke" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    app:strokeColor="@color/colorPrimaryDark"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="48dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0"
+                                app:cardCornerRadius="10dp">
+
+                                <com.google.android.material.switchmaterial.SwitchMaterial
+                                    android:id="@+id/switchScheduleBasedGrup"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/colorPrimaryDark"
+                                    android:padding="10dp" />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="25dp"
+                                android:layout_weight="1.0"
+                                android:text="Berdasarkan Jadwal Penguncian"
+                                android:textStyle="bold"
+                                tools:ignore="NestedWeights" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="25dp"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingHorizontal="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="\u2022 Kunci Pada Jam :" />
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/basedScheduleStartGrup"
+                                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingHorizontal="5dp"
+                                    android:text="21:00" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingHorizontal="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="\u2022 Buka Kunci Layar Pada Jam :" />
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/basedScheduleFinishGrup"
+                                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingHorizontal="5dp"
+                                    android:text="03.30" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.9dp"
+                        android:background="@color/colorStroke" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/simpan_member_usage_lock_setting"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="SIMPAN" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/batal_member_usage_lock_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="BATAL" />
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/btsh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/btsm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/bssh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/bssm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/btfh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/btfm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/bsfh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/bsfm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/sbt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/sbs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/radiostate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

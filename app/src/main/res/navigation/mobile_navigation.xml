@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.djamari.usageadvisor.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_todo"
+        android:name="com.djamari.usageadvisor.ui.agenda.AgendaFragment"
+        android:label="@string/title_pengingat"
+        tools:layout="@layout/fragment_agenda" />
+
+    <fragment
+        android:id="@+id/navigation_personal_usage"
+        android:name="com.djamari.usageadvisor.ui.personal_usage.PersonalUsageFragment"
+        android:label="@string/title_personal_usage"
+        tools:layout="@layout/fragment_personal_usage" />
+
+    <fragment
+        android:id="@+id/navigation_member_usage"
+        android:name="com.djamari.usageadvisor.ui.member_usage.GroupUsageFragment00"
+        android:label="@string/title_group_usage"
+        tools:layout="@layout/fragment_member_usage00" />
+
+    <fragment
+        android:id="@+id/navigation_locking_phone"
+        android:name="com.djamari.usageadvisor.ui.lock_phone.LockPhoneFragment"
+        android:label="@string/title_lock_phone"
+        tools:layout="@layout/fragment_lock_phone" />
+
+</navigation>

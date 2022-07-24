@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="?attr/actionBarSize"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|left">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewHeroPersonalUsage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/personal_usage_hero" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/pengunaan_hari_ini_personal"
+                    style="@style/Widget.MaterialComponents.CardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="Penggunaan Hari Ini :"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/waktu_penggunaan_personal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/koleksi_penguunaan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/koleksi_waktu"
+                                app:cornerRadius="10dp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/colorStroke" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="Daftar Aplikasi :"
+                            android:textSize="20dp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerview_daftar_aplikasi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
